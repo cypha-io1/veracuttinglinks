@@ -121,7 +121,7 @@ export default function ProductViewModal({ product, onClose }: ProductViewModalP
     if (!product) return;
     const image = product.image && (product.image.startsWith('http') || product.image.startsWith('data:'))
       ? product.image
-      : '/logo.png';
+      : '/vera-vera-logo.png';
 
     addToCart(
       {

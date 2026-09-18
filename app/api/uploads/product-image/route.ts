@@ -58,7 +58,7 @@ export async function POST(request: Request) {
     const result = await new Promise<{ secure_url: string }>((resolve, reject) => {
       const uploadStream = cloudinary.uploader.upload_stream(
         {
-          folder: 'zhilakaii/products',
+          folder: 'veracuttinglinks/products',
           resource_type: 'image',
           format: 'webp',
         },

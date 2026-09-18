@@ -167,7 +167,7 @@ export async function POST(request: Request) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: admin.email || `admin-${admin.id}@zhilakaii.local`,
+          email: admin.email || `admin-${admin.id}@veracuttinglinks.local`,
           amount: amountKobo,
           currency: 'GHS',
           reference,
@@ -210,7 +210,7 @@ export async function POST(request: Request) {
       reference: payload.data.reference,
       authorizationUrl: payload.data.authorization_url || '',
       accessCode: payload.data.access_code || '',
-      email: admin.email || `admin-${admin.id}@zhilakaii.local`,
+      email: admin.email || `admin-${admin.id}@veracuttinglinks.local`,
       publicKey,
       amount: amountKobo,
       amountGhs,

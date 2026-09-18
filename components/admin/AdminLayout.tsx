@@ -69,12 +69,12 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
         <div className="p-6 flex items-center justify-between border-b border-black">
           {isSidebarOpen && (
             <div className="flex items-center gap-3">
-              <Image src="/logo.png" alt="Logo" width={32} height={32} className="w-8 h-8" />
+              <span className="font-black text-lg tracking-tighter uppercase">Vera<span className="text-gray-500">Cutting</span>Links</span>
               <h2 className="text-lg font-bold text-white">PizzaCity</h2>
             </div>
           )}
           {!isSidebarOpen && (
-            <Image src="/logo.png" alt="Logo" width={28} height={28} className="w-7 h-7 mx-auto" />
+            <span className="font-black text-lg tracking-tighter uppercase">Vera<span className="text-gray-500">Cutting</span>Links</span>
           )}
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}

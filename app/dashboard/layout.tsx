@@ -5,7 +5,7 @@ import { getUserBySessionToken } from '@/lib/serverAuth';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
-  description: 'Manage your Zhilakaii activity, recent orders, and account details from your personal dashboard.',
+  description: 'Manage your Vera Cutting Links activity, recent orders, and account details from your personal dashboard.',
 };
 
 export default async function Layout({ children }: { children: React.ReactNode }) {

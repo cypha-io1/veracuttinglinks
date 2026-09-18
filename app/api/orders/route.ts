@@ -81,10 +81,10 @@ type SmsTemplates = {
 
 const DEFAULT_SMS_TEMPLATES: SmsTemplates = {
   smsOrderConfirmationTemplate:
-    'Zhilakaii: Order {orderNumber} confirmed. Payment received. Total GHc{total}. We will notify you when status changes.',
-  smsOrderStatusTemplate: 'Zhilakaii: Your order {orderNumber} status is now {status}.',
+    'Vera Cutting Links: Order {orderNumber} confirmed. Payment received. Total GHc{total}. We will notify you when status changes.',
+  smsOrderStatusTemplate: 'Vera Cutting Links: Your order {orderNumber} status is now {status}.',
   smsNewOrderAdminTemplate:
-    'Zhilakaii: New paid order {orderNumber} from {customerName} ({city}). Total GHc{total}.',
+    'Vera Cutting Links: New paid order {orderNumber} from {customerName} ({city}). Total GHc{total}.',
 };
 
 function applySmsTemplate(template: string, values: Record<string, string>) {

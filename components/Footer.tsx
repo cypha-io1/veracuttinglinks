@@ -7,10 +7,10 @@ import { FaInstagram, FaSnapchat, FaTiktok, FaWhatsapp } from 'react-icons/fa6';
 
 const SOCIALS = [
   { name: 'Snapchat', link: 'https://snapchat.com/t/ZUch8xYy' , handle: 'ZUch8xYy' },
-  { name: 'TikTok', link: 'https://www.tiktok.com/@.zhilakaii', handle: '@zhilakaii' },
-  { name: 'Instagram', link: 'https://www.instagram.com/zhilakaii_?igsh=MXhnZHNhNGw0N3FwYg%3D%3D&utm_source=qr', handle: '@zhilakaii_' },
+  { name: 'TikTok', link: 'https://www.tiktok.com/@.veracuttinglinks', handle: '@veracuttinglinks' },
+  { name: 'Instagram', link: 'https://www.instagram.com/veracuttinglinks_?igsh=MXhnZHNhNGw0N3FwYg%3D%3D&utm_source=qr', handle: '@veracuttinglinks_' },
   { name: 'WhatsApp', link: 'https://wa.me/+233206742769', handle: '+233 206 742 769' },
-  { name: 'Email', link: 'mailto:shopzhilakaii@gmail.com', handle: 'shopzhilakaii@gmail.com' },
+  { name: 'Email', link: 'mailto:shopveracuttinglinks@gmail.com', handle: 'shopveracuttinglinks@gmail.com' },
 ];
 
 export default function Footer() {
@@ -20,16 +20,12 @@ export default function Footer() {
         <div className="px-6 py-10">
           <div className="max-w-3xl mx-auto space-y-5 text-center">
             <Link href="/" className="flex items-center justify-center">
-              <Image 
-                src="/logo.png" 
-                alt="Zhilakaii Logo" 
-                width={50} 
-                height={50}
-                className="rounded-lg brightness-0 invert"
-              />
+              <span className="font-black text-xl md:text-2xl tracking-tighter text-white uppercase">
+                Vera<span className="text-gray-400">Cutting</span>Links
+              </span>
             </Link>
             <p className="text-white text-sm md:text-base">
-              Inspired by Sparkling Heaven, Zhilakaii curates celestial jewelry that shines with timeless elegance and radiant beauty.
+              Inspired by elegant style, Vera Cutting Links curates celestial clothing that shines with timeless elegance and elegant designs.
             </p>
             <div className="flex justify-center gap-4 pt-1">
               {SOCIALS.map((social) => (
@@ -56,7 +52,7 @@ export default function Footer() {
               ))}
             </div>
             <p className="text-white/90 text-xs md:text-sm pt-2">
-              © 2026 Zhilakaii. All rights reserved.
+              © 2026 Vera Cutting Links. All rights reserved.
             </p>
           </div>
         </div>

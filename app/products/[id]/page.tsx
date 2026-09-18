@@ -40,9 +40,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { id } = await params;
   const product = await getProduct(id);
   if (product) {
-    const fallbackDescription = 'Discover this Zhilakaii piece inspired by celestial elegance and radiant beauty.';
+    const fallbackDescription = 'Discover this Vera Cutting Links piece inspired by beautiful comfort and elegant designs.';
     const productDescription = (product.description || '').trim() || fallbackDescription;
-    const primaryImage = product.image || product.imageUrls?.[0] || '/logo.png';
+    const primaryImage = product.image || product.imageUrls?.[0] || '/vera-vera-logo.png';
 
     return {
       title: product.name,

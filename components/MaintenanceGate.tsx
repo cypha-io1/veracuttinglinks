@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const FALLBACK_IMAGES = ['/logo.png'];
+const FALLBACK_IMAGES = ['/vera-vera-logo.png'];
 
 const normalizePhoneInput = (value: string) => value.replace(/\D/g, '').slice(0, 10);
 const isValidPhone = (value: string) => /^0\d{9}$/.test(value);

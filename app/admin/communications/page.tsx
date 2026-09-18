@@ -269,7 +269,7 @@ export default function AdminCommunicationsPage() {
       const publicKey = String(initPayload.publicKey || '');
       const reference = String(initPayload.reference || '');
       const accessCode = String(initPayload.accessCode || '');
-      const email = String(initPayload.email || 'admin-topup@zhilakaii.local');
+      const email = String(initPayload.email || 'admin-topup@veracuttinglinks.local');
       const amount = Number(initPayload.amount || 0);
 
       if (!window.PaystackPop || typeof window.PaystackPop.setup !== 'function') {

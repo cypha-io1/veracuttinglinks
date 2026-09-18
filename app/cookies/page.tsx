@@ -81,7 +81,7 @@ export default function CookiesPage() {
           <section>
             <h2 className="text-2xl font-black text-gray-800 mb-4">7. Contact Us</h2>
             <p className="text-gray-700 leading-relaxed">
-              If you have questions about our use of cookies, please contact us at info@zhilakaii.com.
+              If you have questions about our use of cookies, please contact us at info@veracuttinglinks.com.
             </p>
           </section>
         </div>

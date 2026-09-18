@@ -5,7 +5,7 @@ import { getUserBySessionToken } from '@/lib/serverAuth';
 
 export const metadata: Metadata = {
   title: 'My Account',
-  description: 'Sign in to your Zhilakaii account to manage orders, addresses, and profile settings.',
+  description: 'Sign in to your Vera Cutting Links account to manage orders, addresses, and profile settings.',
 };
 
 export default async function Layout({ children }: { children: React.ReactNode }) {

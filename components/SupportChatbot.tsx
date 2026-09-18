@@ -75,7 +75,7 @@ export default function SupportChatbot() {
   const INITIAL_OPTIONS = [
     { label: '💎 Explore Collections', action: 'explore' },
     { label: '🚚 Track My Order', action: 'track_form' },
-    { label: '✨ Jewelry Sizing & Care', action: 'sizing_care' },
+    { label: '✨ Clothing Sizing & Care', action: 'sizing_care' },
     { label: '💬 Talk to a Stylist', action: 'stylist_form' },
   ];
 
@@ -85,13 +85,13 @@ export default function SupportChatbot() {
       {
         id: 'welcome-1',
         sender: 'bot',
-        text: 'Greetings! I am Aria, your Zhilakaii Celestial Assistant. ✨',
+        text: 'Greetings! I am Aria, your Vera Cutting Links Celestial Assistant. ✨',
         timestamp: new Date(),
       },
       {
         id: 'welcome-2',
         sender: 'bot',
-        text: 'Inspired by the celestial heavens, I am here to guide your search for exquisite luxury jewelry. How can I add a sparkling touch to your journey today?',
+        text: 'Inspired by the celestial heavens, I am here to guide your search for exquisite luxury clothing. How can I add a sparkling touch to your journey today?',
         timestamp: new Date(),
         options: INITIAL_OPTIONS,
       },
@@ -161,7 +161,7 @@ export default function SupportChatbot() {
     let label = '';
     if (action === 'explore') label = '💎 Explore Fine Collections';
     else if (action === 'track_form') label = '🚚 Track My Order';
-    else if (action === 'sizing_care') label = '✨ Jewelry Sizing & Care';
+    else if (action === 'sizing_care') label = '✨ Clothing Sizing & Care';
     else if (action === 'stylist_form') label = '💬 Talk to a Stylist';
     else if (action === 'reset_menu') label = '🔙 Back to Main Options';
 
@@ -179,7 +179,7 @@ export default function SupportChatbot() {
 
     if (action === 'explore') {
       addBotMessage(
-        'Our handcrafted collections embody celestial elegance and radiant beauty. Explore our featured pieces:\n\n🌌 **Celestial Rings**: Timeless gold bands dotted with sparkling starlight diamonds.\n🌌 **Sparkling Necklaces**: Celestial chains designed to rest elegantly like stardust.\n🌌 **Starry Earrings**: Radiant studs that capture cosmic glimmers.',
+        'Our handcrafted collections embody beautiful comfort and elegant designs. Explore our featured pieces:\n\n🌌 **Celestial Rings**: Timeless gold bands dotted with sparkling starlight diamonds.\n🌌 **Sparkling Necklaces**: Celestial chains designed to rest elegantly like stardust.\n🌌 **Starry Earrings**: Radiant studs that capture cosmic glimmers.',
         1200,
         [
           { label: '💍 Browse Rings', action: 'link_rings' },
@@ -200,7 +200,7 @@ export default function SupportChatbot() {
       );
     } else if (action === 'sizing_care') {
       addBotMessage(
-        'Zhilakaii pieces are crafted with premium materials to sparkle like the stars. Here are some care recommendations:\n\n✨ **Diamond Care**: Gently clean with warm water and mild soap using a soft brush.\n✨ **Ring Sizing**: Use a flexible sizing tape or visit a local jeweler. Ring sizes vary by finger and climate.\n✨ **Plating Protection**: Avoid wearing fine jewelry in chlorine pools or when applying lotions/perfumes.',
+        'Vera Cutting Links pieces are crafted with premium materials to sparkle like the stars. Here are some care recommendations:\n\n✨ **Diamond Care**: Gently clean with warm water and mild soap using a soft brush.\n✨ **Ring Sizing**: Use a flexible sizing tape or visit a local clothing brand. Ring sizes vary by finger and climate.\n✨ **Plating Protection**: Avoid wearing fine clothing in chlorine pools or when applying lotions/perfumes.',
         1200,
         INITIAL_OPTIONS
       );
@@ -257,7 +257,7 @@ export default function SupportChatbot() {
       handleAction('sizing_care');
     } else if (lower.includes('ship') || lower.includes('delivery') || lower.includes('time')) {
       addBotMessage(
-        '🌌 **Celestial Priority Delivery**:\n\nWe hand-deliver our precious jewelry within **30-45 minutes** in local hubs. All packages are insured and fully secured to protect their pristine shine.\n\nWould you like to track an existing shipment?',
+        '🌌 **Celestial Priority Delivery**:\n\nWe hand-deliver our precious clothing within **30-45 minutes** in local hubs. All packages are insured and fully secured to protect their pristine shine.\n\nWould you like to track an existing shipment?',
         1100,
         [
           { label: '🚚 Track Order', action: 'track_form' },
@@ -266,7 +266,7 @@ export default function SupportChatbot() {
       );
     } else if (lower.includes('return') || lower.includes('refund') || lower.includes('warranty')) {
       addBotMessage(
-        '💎 **Zhilakaii Guarantee**:\n\nWe offer a premium 14-day warranty on all handcrafted pieces. If the sparkle is not exactly as you envisioned, we provide custom adjustments or seamless returns on unworn items.\n\nPlease contact our concierge team or leave a message to initialize a request.',
+        '💎 **Vera Cutting Links Guarantee**:\n\nWe offer a premium 14-day warranty on all handcrafted pieces. If the sparkle is not exactly as you envisioned, we provide custom adjustments or seamless returns on unworn items.\n\nPlease contact our concierge team or leave a message to initialize a request.',
         1200,
         [
           { label: '💬 Message Stylist', action: 'stylist_form' },
@@ -372,7 +372,7 @@ export default function SupportChatbot() {
         {
           id: `stylist-success-${Date.now()}`,
           sender: 'bot',
-          text: `🌌 **Concierge Stylist Request Dispatched!**\n\nThank you ${ticketName}. A custom jewelry advisor has received your request and will reach out via **${phoneDigits}** shortly. (ref: ${payload?.data?.id ?? 'n/a'}) ✨`,
+          text: `🌌 **Concierge Stylist Request Dispatched!**\n\nThank you ${ticketName}. A custom clothing advisor has received your request and will reach out via **${phoneDigits}** shortly. (ref: ${payload?.data?.id ?? 'n/a'}) ✨`,
           timestamp: new Date(),
           options: INITIAL_OPTIONS,
         },
@@ -824,7 +824,7 @@ export default function SupportChatbot() {
           {view !== 'chat' && (
             <div className="bg-gray-50/80 border-t border-gray-100 p-3 flex justify-center shrink-0">
               <span className="text-[10px] font-bold text-gray-400 tracking-widest uppercase">
-                Powered by Zhilakaii
+                Powered by Vera Cutting Links
               </span>
             </div>
           )}

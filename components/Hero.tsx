@@ -13,13 +13,13 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center space-y-6">
           <h1 className="text-5xl md:text-7xl font-black tracking-tight">
-            Welcome to <span className="text-white">Zhilakaii</span>
+            Welcome to <span className="text-white">Vera Cutting Links</span>
           </h1>
           <p className="text-xl md:text-2xl font-semibold max-w-3xl mx-auto">
-            Celestial Elegance, Radiant Beauty
+            Premium Kids Caftans & Clothing
           </p>
           <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
-            Jewelry crafted to sparkle like the stars and illuminate your unique style
+            Discover our beautiful collection of elegant caftans and stylish clothing designed specially for kids.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">

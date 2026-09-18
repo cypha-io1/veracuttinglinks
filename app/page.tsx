@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Discover radiant jewelry inspired by Sparkling Heaven. Shop rings, necklaces, bracelets, and timeless pieces at Zhilakaii.',
+  description: 'Shop premium kids caftans and clothing at Vera Cutting Links. Discover beautiful, elegant designs specially crafted for children.',
 };
 
 export default async function Home() {

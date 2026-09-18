@@ -9,7 +9,7 @@ type SliderProduct = {
 };
 
 const FALLBACK_SLIDES = [
-  '/logo.png',
+  '/vera-vera-logo.png',
 ];
 
 export default function AdSection() {

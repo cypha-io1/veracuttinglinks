@@ -30,7 +30,7 @@ function normalizeSenderId(sender: string): string {
 
 function senderForV2(sender: string): string {
   const value = String(sender || '').trim();
-  return value || 'Zhilakaii';
+  return value || 'Vera Cutting Links';
 }
 
 function normalizeRecipientForMnotify(to: string): string {
@@ -57,7 +57,7 @@ function normalizeRecipientForMnotify(to: string): string {
 export async function sendSms(options: { to: string; message: string; deductCredit?: boolean }): Promise<SmsSendResult> {
   const configuredApiUrl = String(process.env.MNOTIFY_API_URL || MNOTIFY_V2_URL).trim();
   const apiKey = String(process.env.MNOTIFY_API_KEY || '').trim();
-  const configuredSender = String(process.env.MNOTIFY_SENDER_NAME || 'Zhilakaii').trim();
+  const configuredSender = String(process.env.MNOTIFY_SENDER_NAME || 'Vera Cutting Links').trim();
   const deductCredit = options.deductCredit !== false;
 
   if (!configuredApiUrl || !apiKey) {

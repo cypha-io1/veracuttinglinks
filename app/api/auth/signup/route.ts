@@ -78,7 +78,7 @@ export async function POST(request: Request) {
     if (user.email) {
       await sendEmail({
         to: user.email,
-        subject: 'Welcome to Zhilakaii!',
+        subject: 'Welcome to Vera Cutting Links!',
         template: 'signup_welcome',
         data: {
           customerName: user.fullName,

@@ -80,7 +80,7 @@ function ProductsPageContent() {
                  <HiOutlineMagnifyingGlass className="absolute left-5 text-2xl text-gray-400 transition-colors duration-300 group-focus-within:text-black md:left-6" />
                  <input
                    type="text"
-                   placeholder="Search for jewelry, rings, necklaces..."
+                   placeholder="Search for clothing, rings, necklaces..."
                    value={searchQuery}
                    onChange={(e) => setSearchQuery(e.target.value)}
                    className="w-full bg-transparent py-4 pl-14 pr-6 font-medium text-gray-800 placeholder:text-gray-400 focus:outline-none md:py-5 md:pl-16 text-lg"

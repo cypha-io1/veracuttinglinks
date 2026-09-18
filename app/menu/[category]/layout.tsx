@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const label = category.charAt(0).toUpperCase() + category.slice(1);
   return {
     title: `${label}`,
-    description: `Explore ${label} collection pieces at Zhilakaii, inspired by celestial elegance and radiant beauty.`,
+    description: `Explore ${label} collection pieces at Vera Cutting Links, inspired by beautiful comfort and elegant designs.`,
   };
 }
 

@@ -14,14 +14,14 @@ export const SOCIALS: Social[] = [
   },
   {
     name: 'TikTok',
-    link: 'https://www.tiktok.com/@.zhilakaii',
-    handle: '@zhilakaii',
-    helpWith: 'Watch our jewelry styling tips and behind-the-scenes',
+    link: 'https://www.tiktok.com/@.veracuttinglinks',
+    handle: '@veracuttinglinks',
+    helpWith: 'Watch our clothing styling tips and behind-the-scenes',
   },
   {
     name: 'Instagram',
-    link: 'https://www.instagram.com/zhilakaii_?igsh=MXhnZHNhNGw0N3FwYg%3D%3D&utm_source=qr',
-    handle: '@zhilakaii_',
+    link: 'https://www.instagram.com/veracuttinglinks_?igsh=MXhnZHNhNGw0N3FwYg%3D%3D&utm_source=qr',
+    handle: '@veracuttinglinks_',
     helpWith: 'Follow us for the latest collections and inspiration',
   },
   {
@@ -32,8 +32,8 @@ export const SOCIALS: Social[] = [
   },
   {
     name: 'Email',
-    link: 'mailto:shopzhilakaii@gmail.com',
-    handle: 'shopzhilakaii@gmail.com',
+    link: 'mailto:shopveracuttinglinks@gmail.com',
+    handle: 'shopveracuttinglinks@gmail.com',
     helpWith: 'Send us an email for detailed inquiries',
   },
 ];

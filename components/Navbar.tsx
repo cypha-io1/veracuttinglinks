@@ -62,13 +62,9 @@ export default function Navbar() {
             {/* Logo Section */}
             <div className="flex-shrink-0">
               <Link href="/" className="group flex items-center gap-3 transition-transform duration-500 hover:-translate-y-1">
-                <Image
-                  src="/logo.png"
-                  alt="Zhilakaii Logo"
-                  width={64}
-                  height={64}
-                  className="md:w-[72px] md:h-[72px] object-contain transition-transform duration-500 group-hover:scale-110 drop-shadow-md"
-                />
+                <span className="font-black text-xl md:text-2xl tracking-tighter text-black uppercase">
+                  Vera<span className="text-gray-500">Cutting</span>Links
+                </span>
               </Link>
             </div>
 

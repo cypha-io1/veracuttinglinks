@@ -272,19 +272,19 @@ export default function AdminShell({ children, userDisplayName }: AdminShellProp
         supportEmail:
           typeof current.supportEmail === 'string' && current.supportEmail.trim()
             ? current.supportEmail.trim()
-            : 'support@zhilakaii.com',
+            : 'support@veracuttinglinks.com',
         smsOrderConfirmationTemplate:
           typeof current.smsOrderConfirmationTemplate === 'string' && current.smsOrderConfirmationTemplate.trim()
             ? current.smsOrderConfirmationTemplate
-            : 'Zhilakaii: Order {orderNumber} confirmed. Payment received. Total GHc{total}. We will notify you when status changes.',
+            : 'Vera Cutting Links: Order {orderNumber} confirmed. Payment received. Total GHc{total}. We will notify you when status changes.',
         smsOrderStatusTemplate:
           typeof current.smsOrderStatusTemplate === 'string' && current.smsOrderStatusTemplate.trim()
             ? current.smsOrderStatusTemplate
-            : 'Zhilakaii: Your order {orderNumber} status is now {status}.',
+            : 'Vera Cutting Links: Your order {orderNumber} status is now {status}.',
         smsNewOrderAdminTemplate:
           typeof current.smsNewOrderAdminTemplate === 'string' && current.smsNewOrderAdminTemplate.trim()
             ? current.smsNewOrderAdminTemplate
-            : 'Zhilakaii: New paid order {orderNumber} from {customerName} ({city}). Total GHc{total}.',
+            : 'Vera Cutting Links: New paid order {orderNumber} from {customerName} ({city}). Total GHc{total}.',
       };
 
       const response = await fetch('/api/admin/settings', {
@@ -317,10 +317,10 @@ export default function AdminShell({ children, userDisplayName }: AdminShellProp
       <div className="flex h-full w-full overflow-hidden">
         <aside className="hidden h-full w-72 flex-none flex-col overflow-y-auto border-r border-slate-200/60 bg-white/60 backdrop-blur-2xl p-6 lg:flex">
           <Link href="/admin/dashboard" className="mb-8 flex items-center gap-3">
-            <Image src="/logo.png" alt="Zhilakaii" width={44} height={44} className="rounded-xl" />
+            <span className="font-black text-lg tracking-tighter uppercase">Vera<span className="text-gray-500">Cutting</span>Links</span>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Admin</p>
-              <p className="text-lg font-black text-slate-900">Zhilakaii</p>
+              <p className="text-lg font-black text-slate-900">Vera Cutting Links</p>
             </div>
           </Link>
 
@@ -359,7 +359,7 @@ export default function AdminShell({ children, userDisplayName }: AdminShellProp
           <header className="sticky top-0 z-30 border-b border-slate-200/60 bg-white/80 px-4 py-3 backdrop-blur-xl sm:px-6 lg:hidden shadow-sm">
             <div className="flex items-center justify-between gap-3">
               <Link href="/admin/dashboard" className="flex items-center gap-2">
-                <Image src="/logo.png" alt="Zhilakaii" width={34} height={34} className="rounded-xl shadow-sm" />
+                <span className="font-black text-lg tracking-tighter uppercase">Vera<span className="text-gray-500">Cutting</span>Links</span>
                 <span className="text-sm font-black">Admin</span>
               </Link>
               <button
@@ -384,7 +384,7 @@ export default function AdminShell({ children, userDisplayName }: AdminShellProp
               <aside className="absolute left-0 top-0 h-full w-80 max-w-[85vw] overflow-y-auto border-r border-slate-200/60 bg-white/90 backdrop-blur-2xl p-5 shadow-2xl">
                 <div className="mb-6 flex items-center justify-between">
                   <Link href="/admin/dashboard" className="flex items-center gap-2" onClick={() => setIsSidebarOpen(false)}>
-                    <Image src="/logo.png" alt="Zhilakaii" width={34} height={34} className="rounded-lg" />
+                    <span className="font-black text-lg tracking-tighter uppercase">Vera<span className="text-gray-500">Cutting</span>Links</span>
                     <span className="text-sm font-black">Admin Panel</span>
                   </Link>
                   <button

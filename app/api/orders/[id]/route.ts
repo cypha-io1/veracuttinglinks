@@ -11,7 +11,7 @@ type OrderStatusPayload = {
   status?: 'Pending' | 'In Progress' | 'Delivered' | 'Cancelled';
 };
 
-const DEFAULT_STATUS_SMS_TEMPLATE = 'Zhilakaii: Your order {orderNumber} status is now {status}.';
+const DEFAULT_STATUS_SMS_TEMPLATE = 'Vera Cutting Links: Your order {orderNumber} status is now {status}.';
 
 function applySmsTemplate(template: string, values: Record<string, string>) {
   return template.replace(/\{(\w+)\}/g, (_, key: string) => values[key] ?? '');

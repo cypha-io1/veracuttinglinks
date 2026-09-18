@@ -21,28 +21,28 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://zhilakaii.com'),
+  metadataBase: new URL('https://veracuttinglinks.com'),
   title: {
-    template: '%s | Zhilakaii',
-    default: 'Zhilakaii',
+    template: '%s | Vera Cutting Links',
+    default: 'Vera Cutting Links',
   },
-  description: "Inspired by Sparkling Heaven, Zhilakaii embodies celestial elegance and radiant beauty. Jewelry crafted to sparkle like the stars.",
+  description: "Discover our beautiful collection of elegant kids caftans and stylish clothing at Vera Cutting Links.",
   icons: {
-    icon: "/logo-square.png",
-    shortcut: "/logo-square.png",
-    apple: "/logo-square.png",
+    icon: "/vera-vera-logo-square.png",
+    shortcut: "/vera-vera-logo-square.png",
+    apple: "/vera-vera-logo-square.png",
   },
   openGraph: {
-    title: "Zhilakaii",
-    description: "Inspired by Sparkling Heaven, Zhilakaii embodies celestial elegance and radiant beauty. Jewelry crafted to sparkle like the stars.",
-    url: "https://zhilakaii.com",
-    siteName: "Zhilakaii",
+    title: "Vera Cutting Links",
+    description: "Discover our beautiful collection of elegant kids caftans and stylish clothing at Vera Cutting Links.",
+    url: "https://veracuttinglinks.com",
+    siteName: "Vera Cutting Links",
     images: [
       {
-        url: "/logo.png",
+        url: "/vera-vera-logo.png",
         width: 1200,
         height: 630,
-        alt: "Zhilakaii Logo",
+        alt: "Vera Cutting Links Logo",
       },
     ],
     locale: "en_US",
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zhilakaii",
-    description: "Inspired by Sparkling Heaven, Zhilakaii embodies celestial elegance and radiant beauty. Jewelry crafted to sparkle like the stars.",
-    images: ["/logo.png"],
+    title: "Vera Cutting Links",
+    description: "Discover our beautiful collection of elegant kids caftans and stylish clothing at Vera Cutting Links.",
+    images: ["/vera-vera-logo.png"],
   },
 };
 

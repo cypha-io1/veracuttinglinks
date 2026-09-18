@@ -16,7 +16,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-black text-gray-800 mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-700 leading-relaxed">
-              By accessing and using Zhilakaii&apos;s services, you accept and agree to be bound by these Terms and Conditions. If you do not agree, please do not use our services.
+              By accessing and using Vera Cutting Links&apos;s services, you accept and agree to be bound by these Terms and Conditions. If you do not agree, please do not use our services.
             </p>
           </section>
 
@@ -54,7 +54,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-black text-gray-800 mb-4">6. Limitation of Liability</h2>
             <p className="text-gray-700 leading-relaxed">
-              Zhilakaii is not liable for any indirect, incidental, or consequential damages arising from the use of our services.
+              Vera Cutting Links is not liable for any indirect, incidental, or consequential damages arising from the use of our services.
             </p>
           </section>
 
@@ -68,7 +68,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-black text-gray-800 mb-4">8. Contact Information</h2>
             <p className="text-gray-700 leading-relaxed">
-              For questions about these Terms & Conditions, contact us at info@zhilakaii.com or +233 XX XXX XXXX.
+              For questions about these Terms & Conditions, contact us at info@veracuttinglinks.com or +233 XX XXX XXXX.
             </p>
           </section>
         </div>

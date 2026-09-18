@@ -7,9 +7,9 @@ import { getUserBySessionToken } from '@/lib/serverAuth';
 export const metadata: Metadata = {
   title: {
     default: 'Admin Dashboard',
-    template: '%s | Zhilakaii Admin',
+    template: '%s | Vera Cutting Links Admin',
   },
-  description: 'Administrative dashboard for managing Zhilakaii products, orders, payments, and operations.',
+  description: 'Administrative dashboard for managing Vera Cutting Links products, orders, payments, and operations.',
 };
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {

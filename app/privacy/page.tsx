@@ -49,14 +49,14 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-black text-gray-800 mb-4">5. Your Rights</h2>
             <p className="text-gray-700 leading-relaxed">
-              You have the right to access, update, or delete your personal information. Contact us at info@zhilakaii.com to exercise these rights.
+              You have the right to access, update, or delete your personal information. Contact us at info@veracuttinglinks.com to exercise these rights.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-black text-gray-800 mb-4">6. Contact Us</h2>
             <p className="text-gray-700 leading-relaxed">
-              If you have any questions about this Privacy Policy, please contact us at info@zhilakaii.com or +233 XX XXX XXXX.
+              If you have any questions about this Privacy Policy, please contact us at info@veracuttinglinks.com or +233 XX XXX XXXX.
             </p>
           </section>
         </div>

@@ -85,14 +85,10 @@ export default function SplashScreen() {
       style={{ transition: 'opacity 0.6s ease' }}
     >
       {/* Logo */}
-      <div className="relative w-32 h-32 mb-6 animate-pulse">
-        <Image
-          src="/logo.png"
-          alt="Zhilakaii"
-          fill
-          className="object-contain"
-          priority
-        />
+      <div className="relative mb-6 animate-pulse flex items-center justify-center">
+        <span className="font-black text-3xl md:text-5xl tracking-tighter text-black uppercase">
+          Vera<span className="text-gray-500">Cutting</span>Links
+        </span>
       </div>
 
       {/* Loading bar */}

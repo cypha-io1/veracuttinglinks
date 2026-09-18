@@ -20,7 +20,7 @@ function isAlwaysAllowed(pathname: string): boolean {
     pathname.startsWith('/api/system/status') ||
     pathname.startsWith('/_next') ||
     pathname === '/favicon.ico' ||
-    pathname === '/logo.png' ||
+    pathname === '/vera-vera-logo.png' ||
     isAssetPath(pathname)
   );
 }

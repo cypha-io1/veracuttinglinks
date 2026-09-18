@@ -25,12 +25,12 @@ const DEFAULT_SETTINGS: Settings = {
   orderNotifications: true,
   allowCashOnDelivery: true,
   lowStockThreshold: 5,
-  supportEmail: 'support@zhilakaii.com',
+  supportEmail: 'support@veracuttinglinks.com',
   smsOrderConfirmationTemplate:
-    'Zhilakaii: Order {orderNumber} confirmed. Payment received. Total GHc{total}. We will notify you when status changes.',
-  smsOrderStatusTemplate: 'Zhilakaii: Your order {orderNumber} status is now {status}.',
+    'Vera Cutting Links: Order {orderNumber} confirmed. Payment received. Total GHc{total}. We will notify you when status changes.',
+  smsOrderStatusTemplate: 'Vera Cutting Links: Your order {orderNumber} status is now {status}.',
   smsNewOrderAdminTemplate:
-    'Zhilakaii: New paid order {orderNumber} from {customerName} ({city}). Total GHc{total}.',
+    'Vera Cutting Links: New paid order {orderNumber} from {customerName} ({city}). Total GHc{total}.',
 };
 
 function normalizeSettings(input: Partial<Settings> | null | undefined): Settings {

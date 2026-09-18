@@ -14,7 +14,7 @@ function getResendInstance(): Resend | null {
   return resendInstance;
 }
 
-const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'noreply@zhilakaii.com';
+const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'noreply@veracuttinglinks.com';
 const EMAIL_SENDING_ENABLED = false;
 
 export type EmailTemplate =
@@ -138,8 +138,8 @@ function buildEmailHtml(template: EmailTemplate, data: Record<string, unknown>):
             <p style="margin-top: 20px; color: #666; font-size: 14px;">Thank you for your order!</p>
           </div>
           <div style="${footerStyle}">
-            <p>Zhilakaii © ${new Date().getFullYear()}</p>
-            <p>support@zhilakaii.com</p>
+            <p>Vera Cutting Links © ${new Date().getFullYear()}</p>
+            <p>support@veracuttinglinks.com</p>
           </div>
         </div>
       `;
@@ -166,7 +166,7 @@ function buildEmailHtml(template: EmailTemplate, data: Record<string, unknown>):
             <p style="margin-top: 20px; color: #666; font-size: 14px;">This link expires in 10 minutes. If you didn't request this, you can safely ignore this email.</p>
           </div>
           <div style="${footerStyle}">
-            <p>Zhilakaii © ${new Date().getFullYear()}</p>
+            <p>Vera Cutting Links © ${new Date().getFullYear()}</p>
           </div>
         </div>
       `;
@@ -181,7 +181,7 @@ function buildEmailHtml(template: EmailTemplate, data: Record<string, unknown>):
       return `
         <div style="${containerStyle}">
           <div style="${cardStyle}">
-            <h1 style="margin: 0 0 20px 0; color: #1f2937;">Welcome to Zhilakaii!</h1>
+            <h1 style="margin: 0 0 20px 0; color: #1f2937;">Welcome to Vera Cutting Links!</h1>
             <p>Hi ${customerName},</p>
             <p>Your account has been created successfully. You're now ready to start browsing and ordering.</p>
             
@@ -190,8 +190,8 @@ function buildEmailHtml(template: EmailTemplate, data: Record<string, unknown>):
             <p style="margin-top: 20px;">If you have any questions, feel free to reach out to our support team.</p>
           </div>
           <div style="${footerStyle}">
-            <p>Zhilakaii © ${new Date().getFullYear()}</p>
-            <p>support@zhilakaii.com</p>
+            <p>Vera Cutting Links © ${new Date().getFullYear()}</p>
+            <p>support@veracuttinglinks.com</p>
           </div>
         </div>
       `;
@@ -220,7 +220,7 @@ function buildEmailHtml(template: EmailTemplate, data: Record<string, unknown>):
             <p style="margin-top: 20px;">Your order will be prepared and delivered soon.</p>
           </div>
           <div style="${footerStyle}">
-            <p>Zhilakaii © ${new Date().getFullYear()}</p>
+            <p>Vera Cutting Links © ${new Date().getFullYear()}</p>
           </div>
         </div>
       `;
@@ -236,14 +236,14 @@ function buildEmailHtml(template: EmailTemplate, data: Record<string, unknown>):
       return `
         <div style="${containerStyle}">
           <div style="${cardStyle}">
-            <h1 style="margin: 0 0 20px 0; color: #1f2937;">${subject || 'Zhilakaii Update'}</h1>
+            <h1 style="margin: 0 0 20px 0; color: #1f2937;">${subject || 'Vera Cutting Links Update'}</h1>
             ${customerName ? `<p>Hi ${customerName},</p>` : ''}
             <p style="white-space: pre-wrap; line-height: 1.6; color: #334155;">${message}</p>
-            <p style="margin-top: 20px; color: #64748b; font-size: 14px;">Zhilakaii Team</p>
+            <p style="margin-top: 20px; color: #64748b; font-size: 14px;">Vera Cutting Links Team</p>
           </div>
           <div style="${footerStyle}">
-            <p>Zhilakaii © ${new Date().getFullYear()}</p>
-            <p>support@zhilakaii.com</p>
+            <p>Vera Cutting Links © ${new Date().getFullYear()}</p>
+            <p>support@veracuttinglinks.com</p>
           </div>
         </div>
       `;

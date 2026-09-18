@@ -74,7 +74,7 @@ export async function POST(request: Request) {
 
     const smsResult = await sendSms({
       to: phone,
-      message: `Your Zhilakaii password reset code is ${code}. It expires in 10 minutes.`,
+      message: `Your Vera Cutting Links password reset code is ${code}. It expires in 10 minutes.`,
     });
 
     if (!smsResult.success) {

@@ -4,7 +4,7 @@ import { getPublicProducts } from '@/lib/productData';
 
 export const metadata: Metadata = {
   title: 'Maintenance',
-  description: 'Zhilakaii is temporarily unavailable while we perform scheduled improvements. Please check back shortly.',
+  description: 'Vera Cutting Links is temporarily unavailable while we perform scheduled improvements. Please check back shortly.',
 };
 
 type MaintenancePageProps = {

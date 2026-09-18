@@ -29,7 +29,7 @@ export default function KitchenLayout({ children }: KitchenLayoutProps) {
       <div className="w-20 bg-white flex flex-col items-center py-6 shadow-lg">
         {/* Logo */}
         <Link href="/kitchen" className="mb-10 p-2.5 rounded-2xl bg-white/10 hover:bg-white/20 transition-all">
-          <Image src="/logo.png" alt="Logo" width={40} height={40} className="rounded-xl" />
+          <span className="font-black text-lg tracking-tighter uppercase">Vera<span className="text-gray-500">Cutting</span>Links</span>
         </Link>
         
         {/* Main Actions */}
