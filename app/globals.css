@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --mono-bg: #ffffff;
+  --mono-fg: #000000;
+  --mono-muted: #525252;
+  --mono-border: #d4d4d4;
+  --mono-soft: #f5f5f5;
+}
+
+body {
+  background: var(--mono-bg);
+  color: var(--mono-fg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.gray-blur-spot {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle at center, rgba(115, 115, 115, 0.35) 0%, rgba(163, 163, 163, 0.18) 35%, rgba(255, 255, 255, 0) 72%);
+  filter: blur(28px);
+  pointer-events: none;
+}
+
+.glass-gray {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+svg,
+svg * {
+  color: currentColor;
+}
+
+@keyframes loading-bar {
+  0%   { width: 0%; }
+  30%  { width: 40%; }
+  70%  { width: 75%; }
+  100% { width: 100%; }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 2.5s ease-in-out forwards;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prevent iOS Safari from zooming in on input focus/autofill */
+@media screen and (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}

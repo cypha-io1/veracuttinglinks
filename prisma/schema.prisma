@@ -1,0 +1,116 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  user
+  admin
+}
+
+model Product {
+  id        Int     @id @default(autoincrement())
+  name      String
+  price     String
+  regularPrice String?
+  salePrice String?
+  image     String
+  category  String
+  description String?
+  isFeatured  Boolean @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  orderItems OrderItem[]
+}
+
+model Order {
+  id            Int         @id @default(autoincrement())
+  orderNumber   String      @unique
+  customerName  String
+  phone         String
+  email         String?
+  address       String
+  city          String
+  notes         String?
+  paymentMethod String
+  status        String      @default("Pending")
+  subtotal      Float
+  delivery      Float
+  total         Float
+  userProfileId Int?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  items         OrderItem[]
+  user          UserProfile? @relation(fields: [userProfileId], references: [id], onDelete: SetNull)
+
+  @@index([userProfileId])
+  @@index([createdAt])
+}
+
+model OrderItem {
+  id          Int      @id @default(autoincrement())
+  orderId     Int
+  productId   Int?
+  productName String
+  price       Float
+  quantity    Int
+  lineTotal   Float
+  createdAt   DateTime @default(now())
+
+  order       Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product     Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+
+  @@index([orderId])
+}
+
+model UserProfile {
+  id         Int      @id @default(autoincrement())
+  fullName   String
+  phone      String   @unique
+  role       Role     @default(user)
+  passwordHash String?
+  email      String?
+  address    String?
+  city       String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  sessions   UserSession[]
+  resets     PasswordReset[]
+  orders     Order[]
+}
+
+model UserSession {
+  id            Int         @id @default(autoincrement())
+  userProfileId Int
+  tokenHash     String      @unique
+  expiresAt     DateTime
+  lastSeenAt    DateTime?
+  createdAt     DateTime    @default(now())
+
+  user          UserProfile @relation(fields: [userProfileId], references: [id], onDelete: Cascade)
+
+  @@index([userProfileId])
+}
+
+model PasswordReset {
+  id            Int         @id @default(autoincrement())
+  userProfileId Int
+  codeHash      String
+  expiresAt     DateTime
+  usedAt        DateTime?
+  createdAt     DateTime    @default(now())
+
+  user          UserProfile @relation(fields: [userProfileId], references: [id], onDelete: Cascade)
+
+  @@index([userProfileId])
+}
