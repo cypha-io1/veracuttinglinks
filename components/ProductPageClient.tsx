@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from 'react';
 import { FiTag } from 'react-icons/fi';
-import AddToCartButton from '@/components/AddToCartButton';
 
 type Variation = {
   name: string;
@@ -215,13 +214,6 @@ export default function ProductPageClient({
 
       <h1 className="mb-4 text-4xl font-light tracking-tight text-gray-900 md:text-5xl lg:text-6xl">{product.name}</h1>
 
-      <div className="mb-8 flex items-baseline gap-4">
-        <p className="text-3xl font-medium tracking-tight text-gray-900 md:text-4xl">{selectedVariationPrice}</p>
-        {showStruckRegular ? (
-          <p className="text-xl text-gray-400 line-through decoration-gray-300">{regularPriceLabel}</p>
-        ) : null}
-      </div>
-
       {product.hasVariations && groupedVariations.size > 0 && (
         <div className="mb-8 space-y-6 border-y border-gray-200 py-8">
           {Array.from(groupedVariations.entries()).map(([variationType, variations]) => (
@@ -253,27 +245,6 @@ export default function ProductPageClient({
         </div>
       )}
 
-      {(isSoldOut || isCurrentSelectionSoldOut) && (
-        <div className="mb-4 rounded-lg border border-black bg-white px-4 py-3 text-center text-sm font-semibold text-black">
-          Out of Stock
-        </div>
-      )}
-
-      {showStockQuantity && typeof effectiveStock === 'number' && effectiveStock > 0 ? (
-        <div className="mb-4 rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-semibold text-gray-700">
-          In stock: {effectiveStock}
-        </div>
-      ) : null}
-
-      <AddToCartButton
-        product={cartProduct}
-        disabled={isSoldOut || isCurrentSelectionSoldOut || (product.hasVariations && !allVariationsSelected)}
-        className={`w-full inline-flex items-center justify-center gap-3 rounded-full px-8 py-5 text-base font-bold transition-all duration-300 ${
-          isSoldOut || isCurrentSelectionSoldOut || (product.hasVariations && !allVariationsSelected)
-            ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-            : 'bg-gray-900 text-white hover:bg-black hover:shadow-xl hover:shadow-gray-900/20 active:scale-[0.98]'
-        }`}
-      />
     </div>
   );
 }
