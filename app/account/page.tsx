@@ -216,7 +216,7 @@ export default function AccountPage() {
 
       const payload = (await response.json()) as { profile: Profile };
       window.localStorage.setItem('wf-user-phone', payload.profile.phone);
-      const target = payload.profile.role === 'admin' ? '/admin/dashboard' : '/dashboard';
+      const target = payload.profile.role === 'admin' ? '/admin/dashboard' : '/';
       router.push(target);
       router.refresh();
     } catch (error) {
@@ -260,7 +260,7 @@ export default function AccountPage() {
 
       const payload = (await response.json()) as { profile: Profile };
       window.localStorage.setItem('wf-user-phone', payload.profile.phone);
-      const target = payload.profile.role === 'admin' ? '/admin/dashboard' : '/dashboard';
+      const target = payload.profile.role === 'admin' ? '/admin/dashboard' : '/';
       router.push(target);
       router.refresh();
     } catch (error) {

@@ -15,7 +15,7 @@ const SOCIALS = [
 
 export default function Footer() {
   return (
-    <footer className="text-white mt-16 mb-4 mx-4">
+    <footer className="text-white mt-16 pb-24 md:pb-4 px-4 relative z-20 bg-gray-50">
       <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-lg bg-black">
         <div className="px-6 py-10">
           <div className="max-w-3xl mx-auto space-y-5 text-center">

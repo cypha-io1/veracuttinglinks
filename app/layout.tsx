@@ -57,7 +57,6 @@ export const metadata: Metadata = {
 };
 
 import BackToTop from "@/components/BackToTop";
-import SupportChatbot from "@/components/SupportChatbot";
 
 export default function RootLayout({
   children,
@@ -72,7 +71,6 @@ export default function RootLayout({
         <SplashScreen />
         {children}
         <BackToTop />
-        <SupportChatbot />
       </body>
     </html>
   );

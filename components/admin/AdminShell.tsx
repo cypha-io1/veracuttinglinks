@@ -56,15 +56,8 @@ const DEFAULT_MAINTENANCE_REASON = 'We are performing scheduled maintenance. Ple
 
 const NAV_ITEMS: NavItem[] = [
   { href: '/admin/dashboard', label: 'Dashboard', icon: FiBarChart2 },
-  { href: '/admin/orders', label: 'Orders', icon: FiShoppingBag },
   { href: '/admin/products', label: 'Products', icon: FiPackage },
-  { href: '/admin/categories', label: 'Categories', icon: FiTag },
-  { href: '/admin/promotions', label: 'Promotions', icon: FiTag },
-  { href: '/admin/analytics', label: 'Analytics', icon: FiGrid },
-  { href: '/admin/communications', label: 'Communications', icon: FiMessageSquare },
-  { href: '/admin/support', label: 'Support', icon: FiMail },
   { href: '/admin/users', label: 'Users', icon: FiUsers },
-  { href: '/admin/settings', label: 'Settings', icon: FiSettings },
 ];
 
 function NavLinks({ pathname, onNavigate }: { pathname: string; onNavigate?: () => void }) {

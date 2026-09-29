@@ -26,7 +26,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   }
 
   if (user.role !== 'admin') {
-    redirect('/dashboard');
+    redirect('/');
   }
 
   return <AdminShell userDisplayName={user.fullName || user.phone}>{children}</AdminShell>;

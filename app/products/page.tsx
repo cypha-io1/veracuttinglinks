@@ -18,15 +18,13 @@ function ProductsPageContent() {
   const { products: allProducts, loading, error } = useProducts();
 
   const requestedCategory = searchParams.get('category')?.trim() || '';
-  const categories = useMemo(
-    () => ['All', ...Array.from(new Set(allProducts.map(product => product.category)))],
-    [allProducts]
-  );
+  const categories = ['All', 'Women', 'Girls', 'Men', 'Boys'];
+
   const activeCategory = useMemo(() => {
     if (!requestedCategory) return 'All';
     const matched = categories.find(category => category.toLowerCase() === requestedCategory.toLowerCase());
     return matched || requestedCategory;
-  }, [requestedCategory, categories]);
+  }, [requestedCategory]);
 
   const setCategoryInUrl = (category: string) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -90,15 +88,16 @@ function ProductsPageContent() {
 
             {/* Filters */}
             <div className="mt-10 flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-              <div className="flex flex-wrap items-center gap-3">
-                {categories.map(category => (
+              {/* Category Tabs */}
+              <div className="flex flex-wrap items-center gap-2 md:gap-4">
+                {categories.map((category) => (
                   <button
                     key={category}
                     onClick={() => setCategoryInUrl(category)}
-                    className={`rounded-full px-5 py-2.5 text-sm font-bold transition-all duration-300 ${
+                    className={`rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-300 md:text-base ${
                       activeCategory === category
-                        ? 'bg-gradient-to-r from-black to-gray-900 text-white shadow-lg shadow-none ring-1 ring-black'
-                        : 'bg-white text-gray-600 shadow-sm ring-1 ring-gray-200 hover:text-black hover:shadow-md hover:ring-black'
+                        ? 'bg-gray-900 text-white shadow-md'
+                        : 'bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-900 shadow-sm border border-gray-200'
                     }`}
                   >
                     {category}

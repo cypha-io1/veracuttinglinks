@@ -15,11 +15,11 @@ export default async function Layout({ children }: { children: React.ReactNode }
   if (token) {
     const user = await getUserBySessionToken(token);
     if (user) {
-      if (user.role === 'admin') {
-        redirect('/admin/dashboard');
+        if (user.role === 'admin') {
+          redirect('/admin/dashboard');
+        }
+        redirect('/');
       }
-      redirect('/dashboard');
-    }
   }
 
   return <>{children}</>;
